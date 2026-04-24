@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Portfolio</title>
+  <meta
+    name="description"
+    content="모던한 분위기의 개인 포트폴리오 웹사이트입니다. 프로젝트와 연락처를 한눈에 확인할 수 있습니다."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="logo" href="#home" aria-label="홈으로 이동">
+        <span class="logo-mark">D</span>
+        <span class="logo-text">Do it!</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Creative Developer Portfolio</p>
+          <h1>감각적인 경험을 만드는 프론트엔드 포트폴리오</h1>
+          <p class="hero-description">
+            심플한 구조와 세련된 인터랙션을 바탕으로, 브랜드와 사용자가 자연스럽게 연결되는
+            웹 경험을 설계하고 구현합니다.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">프로젝트 보기</a>
+            <a class="button button-secondary" href="#contact">문의하기</a>
+          </div>
+
+          <ul class="hero-metrics" aria-label="핵심 지표">
+            <li>
+              <strong>3+</strong>
+              <span>Featured Projects</span>
+            </li>
+            <li>
+              <strong>100%</strong>
+              <span>Responsive Design</span>
+            </li>
+            <li>
+              <strong>24h</strong>
+              <span>Fast Communication</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container intro-panel">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>브랜드의 인상을 결정하는 첫 화면을 만듭니다.</h2>
+        </div>
+        <p>
+          트렌디한 비주얼과 명확한 정보 구조를 함께 고려해, 보기 좋은 것을 넘어서 실제로 사용하기
+          편한 포트폴리오와 랜딩 페이지를 제작합니다.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>선별한 프로젝트</h2>
+          <p>기획 의도와 결과물을 함께 보여 줄 수 있도록 카드 형태로 구성했습니다.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image gradient-card">
+              <span>Brand Site</span>
+            </div>
+            <div class="project-content">
+              <h3>패션 브랜드 쇼케이스</h3>
+              <p>
+                룩북과 캠페인 이미지를 강조하는 레이아웃으로 브랜드 정체성을 강하게 전달한 웹사이트입니다.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image gradient-card alt">
+              <span>Dashboard</span>
+            </div>
+            <div class="project-content">
+              <h3>크리에이터 대시보드</h3>
+              <p>
+                콘텐츠 현황을 직관적으로 확인할 수 있도록 카드와 통계 중심 인터페이스를 설계했습니다.
+              </p>
+              <div class="project-tags">
+                <span>UI Design</span>
+                <span>Vanilla JS</span>
+                <span>Data View</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image gradient-card dark">
+              <span>Portfolio</span>
+            </div>
+            <div class="project-content">
+              <h3>개인 포트폴리오 리디자인</h3>
+              <p>
+                어두운 배경과 유리 질감 효과를 조합해 몰입감 있는 자기소개형 포트폴리오를 구현했습니다.
+              </p>
+              <div class="project-tags">
+                <span>Modern UI</span>
+                <span>Glassmorphism</span>
+                <span>Mobile First</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>새로운 프로젝트를 함께 시작해 볼까요?</h2>
+          <p>
+            협업 문의, 포트폴리오 의뢰, 프론트엔드 작업 상담 등 편하게 메시지를 보내 주세요.
+          </p>
+          <div class="contact-info">
+            <a href="mailto:hello@minportfolio.com">hello@minportfolio.com</a>
+            <a href="tel:+821012345678">+82 10-1234-5678</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            이름
+            <input type="text" name="name" placeholder="고경희" required>
+          </label>
+          <label>
+            이메일
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            문의 내용
+            <textarea name="message" rows="5" placeholder="프로젝트에 대해 알려 주세요." required></textarea>
+          </label>
+          <button class="button button-primary submit-button" type="submit">메시지 보내기</button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
