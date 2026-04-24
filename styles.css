@@ -169,7 +169,7 @@ main {
   padding-top: 0;
   background-image:
     linear-gradient(rgba(2, 6, 23, 0.6), rgba(2, 6, 23, 0.78)),
-    url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1920&q=80");
+    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1920&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -331,6 +331,10 @@ p {
   margin-bottom: 2rem;
 }
 
+#projects .section-heading .eyebrow {
+  color: #000;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -343,16 +347,23 @@ p {
 }
 
 .project-image {
-  display: grid;
-  place-items: center;
+  position: relative;
   min-height: 220px;
-  padding: 1.5rem;
+  padding: 0;
+}
+
+.project-image img {
+  height: 220px;
 }
 
 .project-image span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
   padding: 0.7rem 1rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(2, 6, 23, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -392,6 +403,10 @@ p {
 .contact-grid {
   grid-template-columns: 0.9fr 1.1fr;
   align-items: start;
+}
+
+#contact {
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.88), rgba(2, 6, 23, 0.98));
 }
 
 .contact-copy,
