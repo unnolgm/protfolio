@@ -244,6 +244,16 @@ p {
   font-size: 1.05rem;
 }
 
+.hero-intro {
+  margin-bottom: 0.9rem;
+  color: #e2e8f0;
+  font-size: 1.05rem;
+}
+
+.hero-intro strong {
+  color: #fff;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
